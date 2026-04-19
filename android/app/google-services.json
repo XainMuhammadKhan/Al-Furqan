@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "315429577938",
+    "project_id": "alfurqan-4e1c4",
+    "storage_bucket": "alfurqan-4e1c4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315429577938:android:72c4f360ef05b31eb5f90b",
+        "android_client_info": {
+          "package_name": "com.example.alfurqan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3n0Hzfn2N1a_U7QE4FYhP67FpxMvefvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

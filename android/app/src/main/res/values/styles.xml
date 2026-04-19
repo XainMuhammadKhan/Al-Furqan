@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Splash screen theme -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Splash background -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+
+        <!-- 🔥 FIX: Transparent status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Allow drawing behind status bar -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Optional: remove navigation bar color -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- App theme after Flutter loads -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Use the same drawable as launch so transparent Flutter UI shows the gradient behind status bar -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+
+        <!-- Keep status bar transparent -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Allow edge-to-edge -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- Optional -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

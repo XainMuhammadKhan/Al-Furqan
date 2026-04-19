@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gradient launch background to match app splash (top-left → bottom-right) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#0F6A3D"
+        android:endColor="#D4AF37"
+        android:angle="45" />
+</shape>
