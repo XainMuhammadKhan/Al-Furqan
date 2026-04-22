@@ -88,11 +88,11 @@ class AudioController extends GetxController {
   Future<void> pause() => player.pause();
   Future<void> seek(Duration d) => player.seek(d);
 
-  void toggleLooping() async {
-    if (isLooping.value)
-      await player.setLoopMode(LoopMode.one);
+  Future<void> toggleLooping() async {
+    if (!isLooping.value)
+      {await player.setLoopMode(LoopMode.one);}
     else
-      await player.setLoopMode(LoopMode.off);
+      {await player.setLoopMode(LoopMode.off);}
     isLooping.value = !isLooping.value;
   }
 

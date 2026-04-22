@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:location/location.dart';
+import 'package:alfurqan/View/Qibla/Qibla_Screen.dart';
 
 class PrayerScreenController extends GetxController {
   Location location = Location();
@@ -27,5 +28,9 @@ class PrayerScreenController extends GetxController {
 
     latitude = _currentPosition?.latitude;
     longitude = _currentPosition?.longitude;
+  }
+
+  void goToQibla() {
+    Get.to(() => const QiblaScreen());
   }
 }

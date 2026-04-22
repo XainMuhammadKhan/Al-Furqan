@@ -112,6 +112,7 @@ class _PrayerScreenState extends State<PrayerScreen> {
                         ],
                       ),
                       child: Stack(
+                        clipBehavior: Clip.none,
                         children: [
                           // Frame image on top like AyaCard
                           Positioned.fill(
@@ -209,11 +210,34 @@ class _PrayerScreenState extends State<PrayerScreen> {
                               ],
                             ),
                           ),
+                          Positioned(
+                            right: 20,
+                            bottom: -24,
+                            child: SizedBox(
+                              width: 48,
+                              height: 48,
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppColors.splashGrad1,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                  padding: EdgeInsets.zero,
+                                ),
+                                onPressed: () => _c.goToQibla(),
+                                child: Icon(
+                                  Icons.explore,
+                                  color: AppColors.splashLogoGlow,
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
                   ),
                 ),
+                const SizedBox(height: 16),
                 const SizedBox(height: 16),
               ],
             ),
